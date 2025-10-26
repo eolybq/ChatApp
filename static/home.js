@@ -158,10 +158,10 @@ let receiveMessages = (roomName) => {
       let newMessageUser = document.createElement('p')
       let newMessageDate = document.createElement('p')
 
-      newMessageUser.classList.add('vojtajeultrageje')
+      newMessageUser.classList.add('newM1')
       newMessageDate.classList.add('datum')
       newMessageDate.textContent = (`${day}.${month}. ${hours}:${minutes}`)
-      newMessageText.classList.add('vojtajeultrageje2')
+      newMessageText.classList.add('newM2')
 
 
       newMessageUser.textContent = message.user
@@ -328,9 +328,9 @@ socket.on('message', (data) => {
     let newMessageUser = document.createElement('p')
     let newMessageDate = document.createElement('p')
     
-    newMessageUser.classList.add('vojtajeultrageje')
+    newMessageUser.classList.add('newM1')
     newMessageDate.classList.add('datum')
-    newMessageText.classList.add('vojtajeultrageje2')
+    newMessageText.classList.add('newM2')
 
       
     const dateObjectMessage = new Date(data.date)
