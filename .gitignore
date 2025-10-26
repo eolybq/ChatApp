@@ -1,0 +1,12 @@
+node_modules
+venv
+.env
+.vercel
+.vscode
+.env.development.local
+config.py
+package.json
+package-lock.json
+Procfile
+vercel.json
+__pycache__

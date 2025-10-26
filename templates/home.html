@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{%block content%}
+
+<div id="conteiner">
+
+    <div id="conteiner2">
+        <div id="rooms">
+            <ul id="roomsList">
+                
+
+            </ul>
+            <button id="addRoom">Add room</button>
+        </div>
+
+        <div id="user">
+            <p id="myUserName"></p>
+            <button id="logout">logout</button>
+        </div>
+
+    </div>
+    <div id="mainContent">
+
+        <div id = "userPage">
+            
+            <input id="renameInput" type="text" style="display:none">
+            <p id ="userNameP"></p>
+            <p id="userEmail"></p>
+            <button id="cancel" style="display:none">Cancel</button>
+            <button id="renameAcc">Rename</button>
+            <button id="deleteAcc">Delete account</button>
+            <button id="deleteAccConfirm" style="display: none;">Are u sure? Delete</button>
+            <p id="vasekgej">Note that you will be logged out after renaming</p>
+            
+        </div>
+
+        <div id="messages">
+            
+        </div>
+
+        
+        <div id="messageInputContainer">
+
+            
+            <input type="tex" id="msg" placeholder="Message" autocomplete="off">
+            
+            <span class="gifIcon">
+                <i class="bi bi-filetype-gif icon2" id="gifBtn"></i>
+                <i class="bi bi-emoji-smile icon3" id="emojiBtn"></i>
+
+                
+            </span>
+            
+            <emoji-picker id="emojiContainer" style="display:none;" ></emoji-picker>
+            <div id="gifContainer" style="display:none;">
+                <input type="text" id="gifInput">
+                <div id="gifDisplay"></div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="listPeople">
+
+        
+    </div>
+
+
+    
+</div>
+
+<script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
+<script src="https://kit.fontawesome.com/4247718cf3.js" crossorigin="anonymous"></script>
+<script type="module" src="{{ url_for('static', filename='home.js') }}"></script>
+{%endblock%}

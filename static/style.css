@@ -1,0 +1,267 @@
+
+#register,
+#termsError,
+#exist,
+#invalid {
+    display: none;
+}
+
+.password-container {
+    position: relative;
+    display: inline-block;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#conteiner {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(235, 207, 207);
+    padding:20px
+}
+
+
+body {
+    
+    margin: 0; /* Odstranění vnějšího okraje těla stránky */
+    padding: 0; /* Odstranění vnitřního okraje těla stránky */
+}
+
+#listPeople {
+    background-color: rgb(77, 77, 77);
+    min-width: 20%;
+  }
+
+  .overlay {
+    position: fixed; /* Fixed positioning to make the overlay cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: 9999; /* Set a high z-index value to ensure the overlay appears in front of everything */
+}
+
+#msg {
+    width: 85%;
+    align-self: flex-end;
+}
+
+#messageInputContainer {
+    display:none;
+}
+
+
+.alertOverlay {
+    position: fixed; /* Fixed positioning to make the overlay cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: 9999; /* Set a high z-index value to ensure the overlay appears in front of everything */
+}
+
+#roomsList {
+    list-style: none;
+    display: flex;
+    margin-left: 7%;
+}
+
+.createdRooms {
+    margin-left: 3%;
+    border-radius: 12px;
+    background-color: rgb(132, 132, 132);
+    padding: 1%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+    min-width: 15%;
+    text-align: center;
+    padding-left: 40px;
+
+
+}
+
+#addRoom {
+    border-radius: 14px;
+    background-color: rgb(255, 255, 255);
+    padding: 1%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    min-width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 3%; /* Adjust as needed */
+    left: 1%; /* Adjust as needed */
+    height: 10%
+}
+
+#rooms {
+    margin: 15px;
+    border-radius:10px;
+    background-color: rgb(74, 71, 71);
+    overflow: auto;
+    white-space: nowrap;
+    min-width:80%;
+}
+
+.fa-trash-can {
+    opacity: 0;
+    float: right;
+    transition: opacity 0.5s ease;
+    margin-left: 5px;
+}
+
+
+#conteiner2 {
+    display: flex;
+    /* grid-template-columns: 6fr 1fr; */
+}
+
+#user {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+    height: 50%;
+    margin-top: 25px;
+    font-size: 20px;
+    text-align: center;
+    min-width:15%
+}
+
+#logout {
+    margin: -8px -10px;
+    border-radius: 20px;
+    height:120%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#logout:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+#userPage {
+    display: block;
+    /* grid-template-columns: 1fr 1fr; */
+    border-radius: 20px;
+    height: 50%;
+    margin-top: 25px;
+    font-size: 20px;
+    text-align: center;
+    min-width:15%;
+    background-color: rgb(132, 132, 132);
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+    border: 2px solid rgb(74, 71, 71);
+}
+
+
+#renameAcc,
+#deleteAcc,
+#cancel,
+#deleteAccConfirm {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: rgb(74, 71, 71);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+#renameAcc:hover,
+#deleteAcc:hover,
+#cancel:hover,
+#deleteAccConfirm:hover {
+    background-color: rgb(60, 51, 51);
+}
+
+#vasekgej {
+    margin-top: 10px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+    text-align: center;
+}
+
+#userNameP {
+    margin: 0 auto;
+    width:15%;
+    border-radius: 5px;
+}
+
+#mainContent {
+    background-color:white;
+    border-radius: 15px
+}
+
+
+.testDiv p {
+    display: inline;
+}
+
+.testDiv {
+    padding: 5px;
+    display: inline-block;
+    border-radius: 10px
+}
+
+
+.vojtajeultrageje {
+    font-size:22px
+}
+
+.datum {
+    color:white;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+
+.newMessage {
+    padding: 1%
+
+}
+
+.newMessage:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+.vojtajeultrageje2  {
+    font-size: 25px;
+    margin-left: 1.1%;
+}
+
+#messages {
+    overflow: auto;
+    max-height: 75vh;
+}
+
+.icon2 {
+    position: absolute;
+    bottom: 10%;
+    right: 30%;
+    /* transform: translateY(-50%); */
+    cursor: pointer;
+}
+
+.icon3 {
+    position: absolute;
+    top: 80%;
+    right: 8px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}

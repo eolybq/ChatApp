@@ -1,0 +1,66 @@
+{%extends "base.html"%}
+
+{%block content%}
+
+<div id="loginPage">
+
+    <div id="login">
+        <h2>Welcome back!</h2>
+        <h4>Glad to see you here again!</h4>
+        <p id="invalid"></p>
+
+        <label for="emailInputLogin">E-MAIL </label>
+        <input id="emailInputLogin" type="email" autocomplete="off">
+
+<!-- dodělat input group z bootsrapu -->
+        <div class="password-container">
+            <label for="passwordInputLogin">PASSWORD</label>
+            <input id = "passwordInputLogin" type="password">
+            <span class="icon" onclick="togglePasswordVisibility('Login')">
+                <i class="bi bi-eye" id="togglePasswordIconLogin"></i>
+            </span>
+        </div>
+
+
+
+        <button id="loginBtn">Login</button>
+        <button id="google">G</button>
+        <p>Need to create account?</p>
+        <a href="#" id="showRegister">Register here</a>
+    </div>
+
+    <div id="register">
+        <h2>Create an account</h2>
+        <p id="invalidRegister"></p>
+        <label for="emailInputRegister">E-MAIL *</label>
+        <input id="emailInputRegister" type="email" autocomplete="off" placeholder="example@email.com">
+
+        <label for="username">USERNAME *</label>
+        <input type="text" id="username">
+
+        <!-- dodělat input group z bootsrapu -->
+        <div class="password-container">
+            <label for="passwordInputRegister">PASSWORD *</label>
+            <input id = "passwordInputRegister" type="password">
+            <span class="icon" onclick="togglePasswordVisibility('Register')">
+                <i class="bi bi-eye" id="togglePasswordIconRegister"></i>
+            </span>
+        </div>
+
+        <button id="registerBtn">Continue</button>
+        <p id="termsError">You must agree to the terms and conditions</p>
+        <button id="google">G</button>
+        <input type="checkbox" id="terms" >
+        <label for="terms">I have read terms and conditions and agree with them.</label>
+        <a href="#" id="showLogin">Already have an account?</a>
+
+    </div>
+
+    
+        
+    
+
+</div>
+
+<script src="{{ url_for('static', filename='login.js') }}"></script>
+{%endblock%}
