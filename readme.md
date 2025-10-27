@@ -10,7 +10,7 @@ https://chatapp-three-orpin.vercel.app/login
 
 ## Project aim
 
-ChatApp is a website which aims to create asynchronous live chatting functionality for online Users. Users can create rooms for themselves and their friends. Then in each room users can write messages, send GIFs, pictures. Each user has its own color and name. Website stores every room, user and message.
+ChatApp is a website which aims to create asynchronous live chatting functionality for online Users. Users can create rooms for themselves and their friends. Then in each room users can write messages, send GIFs, pictures. Each user has their own color and name. Website stores every room, user and message.
 
 
 ## Tools used
